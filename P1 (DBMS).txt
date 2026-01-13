@@ -1,0 +1,14 @@
+1.User creation with password sit:
+create user A2 identified by sit;
+
+2.Permission for A2:
+grant connect, resource to A2;
+
+3.To change password:
+alter user A2 identified by NEW_PASSWORD;
+
+4.TO save the data or save and exit:
+commit; or exit;
+
+5.Login as system, then unlock user:
+alter user A2 account unlock;
