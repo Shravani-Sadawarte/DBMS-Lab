@@ -1,0 +1,11 @@
+1.To create a table:
+create table p_info(id int, name varchar2(50), contact int, desg varchar2(10));
+
+2.To check no. of tables present in the database:
+select * from tab;
+
+3.select * from p_info;
+OUTPUT : no rows selected
+
+4. insert into p_info values(101, 'shravani', 8880188010, 'student' );
+OUTPUT : 1 row created.
