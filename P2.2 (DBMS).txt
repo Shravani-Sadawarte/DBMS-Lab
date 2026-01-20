@@ -1,0 +1,32 @@
+Using "&" for INSERT (Multiple Entries) in a Table:
+
+CREATE TABLE st_info (
+    roll_no NUMBER,
+    name    VARCHAR2(20),
+    sub1    NUMBER,
+    sub2    NUMBER,
+    sub3    NUMBER
+);
+
+
+INSERT INTO st_info
+VALUES (&roll_no, '&name', &sub1, &sub2, &sub3);
+
+OUTPUT:
+Enter value for roll_no:
+Enter value for name:
+Enter value for sub1:
+Enter value for sub2:
+Enter value for sub3:
+
+#If you want to reuse a value without re-entering it:
+
+INSERT INTO st_info
+VALUES (&roll_no, '&&name', &sub1, &sub2, &sub3);
+
+
+
+
+
+
+
